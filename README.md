@@ -1,3 +1,37 @@
+# Reimplementation
+I reimplemented MLB on VQA 1.0
+## Configuration
+window10
+Python 3.8.5
+conda 4.8.3
+pytorch 1.6.0
+torchvision 0.2.1
+cuda 8.0
+
+## Reimplementation Procedures
+### clone repository
+```
+git clone --recursive https://github.com/Cadene/vqa.pytorch.git 
+pip install -r requirements.txt
+```
+### Extract Features
+```
+wget https://d2j0dndfm35trm.cloudfront.net/resnet-152.t7       # download pretrained Resnet-152
+wget https://data.lip6.fr/coco/testset.hdf5                    # I only use testset to evaluate
+wget https://data.lip6.fr/coco/testset.txt
+```
+### Reproduce Results
+'''
+wget http://webia.lip6.fr/~cadene/Downloads/vqa.pytorch/logs/vqa/mlb_att_trainval.zip    # download pretrained MLB model
+python train.py -e --path_opt options/vqa/mlb_noatt_trainval.yaml --resume ckpt          # evaluate it on testset
+'''
+
+## Reimplementation Results
+<p align="center">
+    <img src="https://raw.githubusercontent.com/Cadene/vqa.pytorch/master/doc/vqa_task.png" width="600"/>
+</p>
+
+
 # Visual Question Answering in pytorch
 
 **/!\ New version of pytorch for VQA available here:** https://github.com/Cadene/block.bootstrap.pytorch
