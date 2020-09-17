@@ -2,10 +2,15 @@
 I reimplemented MLB on VQA 1.0
 ## Configuration
 window10
+
 Python 3.8.5
+
 conda 4.8.3
+
 pytorch 1.6.0
+
 torchvision 0.2.1
+
 cuda 8.0
 
 ## Reimplementation Procedures
