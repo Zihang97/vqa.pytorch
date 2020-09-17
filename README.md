@@ -27,7 +27,7 @@ python train.py -e --path_opt options/vqa/mlb_noatt_trainval.yaml --resume ckpt 
 ```
 
 ## Reimplementation Results
-My results shown here
+My results shown here. My reimplementation performance is poorer than results in paper. I think the reason may lie in feature extraction part, as this repository doesn't provide extracted features.
 <p align="left">
     <img src="https://github.com/Zihang97/vqa.pytorch/blob/master/doc/Results.PNG" width="200"/>
 </p>
