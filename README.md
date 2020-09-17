@@ -21,16 +21,24 @@ wget https://data.lip6.fr/coco/testset.hdf5                    # I only use test
 wget https://data.lip6.fr/coco/testset.txt
 ```
 ### Reproduce Results
-'''
+```
 wget http://webia.lip6.fr/~cadene/Downloads/vqa.pytorch/logs/vqa/mlb_att_trainval.zip    # download pretrained MLB model
 python train.py -e --path_opt options/vqa/mlb_noatt_trainval.yaml --resume ckpt          # evaluate it on testset
-'''
+```
 
 ## Reimplementation Results
-<p align="center">
-    <img src="https://raw.githubusercontent.com/Cadene/vqa.pytorch/master/doc/vqa_task.png" width="600"/>
+My results shown here
+<p align="left">
+    <img src="https://github.com/Zihang97/vqa.pytorch/blob/Zihang97-patch-1/doc/Results.PNG" width="200"/>
 </p>
-
+This is the results table from MUTAN paper
+<p align="left">
+    <img src="https://github.com/Zihang97/vqa.pytorch/blob/Zihang97-patch-1/doc/Paper Results.PNG" width="400"/>
+</p>
+I try to submit my results to evaluation server but failed, don't know why
+<p align="left">
+    <img src="https://github.com/Zihang97/vqa.pytorch/blob/Zihang97-patch-1/doc/Submit.PNG" width="600"/>
+</p>
 
 # Visual Question Answering in pytorch
 
